@@ -358,7 +358,7 @@ plt.ylim((12, max(errors)))
 plt.xticks(np.linspace(0, max(iteration), 2))
 plt.yticks((12, errors[-1], max(errors)))
 plt.legend(['Batch Descent'], loc='best')
-plt.show()
+plt.draw()
 
 #print(epsilon)
 ## %%
@@ -453,7 +453,7 @@ plt.ylim((0, max(errors)))
 plt.xticks(np.linspace(0, max(iteration), 2))
 plt.yticks((0, errors[-1], max(errors)))
 plt.legend(['Stochastic Descent'], loc='best')
-plt.show()
+plt.draw()
 
 get_error(trained_stochastic_weights, X_train, y_train)
 print('\nstochastic weight:', trained_stochastic_weights)
