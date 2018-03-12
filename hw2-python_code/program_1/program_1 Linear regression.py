@@ -440,7 +440,7 @@ errors = stochastic[2]
 trained_stochastic_weights = stochastic[0]
 #epsilon = stochastic[4]
 
-plt.figure(1, figsize=(4, 4))
+plt.figure(2, figsize=(4, 4))
 font = {'family' : 'DejaVu Sans',
     'weight' : 'normal',
     'size'   : 18}
