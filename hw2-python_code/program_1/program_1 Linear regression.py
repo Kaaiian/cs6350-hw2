@@ -488,6 +488,8 @@ print('analytic solution, error:', error)
 get_error(optimized_weights, X_train, y_train)
 get_error(optimized_weights, X_test, y_test)
 
+
+plt.show()
 ## %%
 #y_predictions = []
 #for X in X_train:
