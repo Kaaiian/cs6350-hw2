@@ -326,7 +326,7 @@ while converged == False:
                                    error_threshold=1,
                                    learning_rate= r,
                                    max_iterations=10,
-                                   tolerance=1e-2)
+                                   tolerance=1e-3)
     converged = batch[1]
     r = r/2
     print('epsilon:', batch[4], 'r:', r)
@@ -339,7 +339,7 @@ batch = batch_gradient_descent(weights,
                                    error_threshold=1,
                                    learning_rate= r,
                                    max_iterations=500,
-                                   tolerance=1e-2)
+                                   tolerance=1e-3)
 iteration = batch[2]
 errors = batch[3]
 trained_batch_weights = batch[0]
@@ -482,11 +482,11 @@ optimized_weights = np.matrix(weight)
 
 error = lms_error(weight, np.matrix(X_correct), np.matrix(y_train))
 print('\nanalytic solution, weights:', weight)
-print('analytic solution, error:', error)
+
 
 
 get_error(optimized_weights, X_train, y_train)
-get_error(optimized_weights, X_test, y_test)
+print('analytic solution, error:', get_error(optimized_weights, X_test, y_test))
 
 plt.show()
 
